@@ -1,0 +1,205 @@
+/* Base Styles & Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+  background-color: rgb(247, 216, 222);
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left,
+.right {
+  flex: 1 1 300px; /* Responsive flex basis */
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h2 {
+  color: #b77373;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  position: relative;
+  padding-left: 10px;
+  border-left: 4px solid #b77373;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #b77373;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #b77373;
+}
+
+/* Images */
+.right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.right img:hover {
+  transform: scale(1.02);
+}
+
+/* Bottom Section */
+.bottom {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 2px solid #b77373;
+}
+
+.bottom h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #b77373;
+}
+
+.bottom br {
+  display: none;
+}
+
+.bottom p {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+/* Marathi Words Styling */
+.bottom p:before {
+  content: "• ";
+  color: #b77373;
+  font-weight: bold;
+}
+
+/* Paragraph Spacing */
+.left p {
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left,
+  .right {
+    flex: none;
+    width: 100%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .bottom {
+    padding: 20px 10px;
+  }
+
+  .bottom h2 {
+    font-size: 1.5rem;
+  }
+
+  .bottom p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+  .bottom h2 {
+    font-size: 1.3rem;
+  }
+
+  .bottom p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Optional: Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Accessibility & Print Friendly */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .container {
+    box-shadow: none;
+  }
+
+  .right img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
