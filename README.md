@@ -7,7 +7,7 @@ This project is a comprehensive and visually engaging resource for learning abou
 
 # India Info Web Project
 
-**[live]()**
+**[live](https://rutik-1.github.io/Bharatsya-Gyanam/)**
 
 Welcome to the **India Info** web project! 🇮🇳  
 This project is a comprehensive and visually engaging resource for learning about the states and union territories of India. Each page provides key facts, traditional attire, historical background, images, and local words for every state.
